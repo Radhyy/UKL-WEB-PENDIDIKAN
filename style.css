@@ -22,7 +22,7 @@
 .section__subheader {
     position: relative;
     isolation: isolate;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding-left: 5rem;
     font-size: 0.9rem;
     font-weight: 600;
@@ -37,6 +37,8 @@
     font-family: var(--header-font);
     color: white;
 }
+
+
 
 
 .btn {
@@ -102,7 +104,7 @@ body {
         rgba(255, 255, 255, 0),
         var(--primary-color)
         ),
-        url("20230131115031_IMG_3231.jpeg");
+        url("/PROJECT_UKL/images/20230131115031_IMG_3231.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -122,7 +124,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem;
 }
+
 
 .nav__links {
     position: absolute;
@@ -162,6 +166,41 @@ nav {
     color: azure;
 }
 
+
+
+/* Atur dropdown agar tersembunyi secara default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* Tampilkan dropdown saat tombol dihover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Tambahkan style untuk link di dalam dropdown */
+.dropdown-content li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
 .header__container {
     position: relative;
     isolation: isolate;
@@ -182,7 +221,7 @@ nav {
 }
 
 .header__content a {
-    color: var(--white);
+    color: white;
 }
 
 .header__content a:hover {
@@ -367,4 +406,5 @@ nav {
     .footer__container {
     grid-template-columns: 2fr 1fr 1fr;
     }
+    
 }

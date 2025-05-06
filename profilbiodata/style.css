@@ -1,0 +1,176 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body style */
+body {
+    background-color: #0a1e27;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container dua card */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* Style card */
+.card {
+    background-color: #102d3b;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Judul dalam card */
+.card h2 {
+    font-size: 28px;
+    color: #4ade80;
+    margin-bottom: 25px;
+}
+
+/* Isi card */
+.card p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+/* Info data */
+.info {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+
+.info strong {
+    width: 90px;
+    flex-shrink: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.info span {
+    color: #cbd5e1;
+    flex-grow: 1;
+}
+
+
+/* Edit button dalam card */
+.links {
+    margin-top: 30px;
+}
+
+.links .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Warna tombol edit */
+.btn.green {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn.green:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}
+
+.btn.blue {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn.blue:hover {
+    background-color: #16a34a;
+    transform: scale(1.05);
+}
+
+/* Tombol Logout dan Ke Beranda */
+.action-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-buttons .btn {
+    width: 180px;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Warna tombol tambahan */
+.btn.red {
+    background-color: #ef4444;
+    color: white;
+    text-decoration: none;
+}
+
+.btn.red:hover {
+    background-color: #dc2626;
+    transform: scale(1.05);
+}
+
+.btn.purple {
+    background-color: #8b5cf6;
+    color: white;
+    text-decoration: none;
+}
+
+.btn.purple:hover {
+    background-color: #7c3aed;
+    transform: scale(1.05);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

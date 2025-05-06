@@ -1,0 +1,110 @@
+/* ======= Global Styles ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a1e27; /* Warna latar belakang gelap */
+    color: #fff; /* Ubah warna teks menjadi putih agar lebih kontras */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ======= Container ======= */
+.container {
+    background: #1f2a35; /* Warna latar belakang container yang lebih gelap */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Tambahkan jarak antar teks */
+p {
+    font-size: 18px;
+    color: #ccc; /* Warna teks p lebih terang */
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #444; /* Sesuaikan dengan tema gelap */
+    text-align: center;
+}
+
+p:last-child {
+    border-bottom: none; /* Hilangkan garis bawah pada elemen terakhir */
+}
+
+/* ======= Header ======= */
+h2 {
+    font-size: 22px;
+    color: #4caf50; /* Warna hijau agar lebih cerah */
+    margin-bottom: 20px;
+}
+
+/* ======= Table Styles ======= */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Memberi jarak antar baris */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #4caf50; /* Warna header hijau yang cerah */
+    color: white;
+    border-radius: 8px 0 0 8px;
+    width: 35%;
+}
+
+td {
+    background: #2c3e50; /* Latar belakang sel tabel lebih gelap */
+    color: #ccc; /* Warna teks lebih terang */
+    border-radius: 0 8px 8px 0;
+}
+
+/* ======= Logout Button ======= */
+.beranda-container {
+    margin-top: 20px;
+}
+
+.beranda {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4caf50; /* Warna tombol hijau cerah */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.beranda:hover {
+    background: #388e3c; /* Warna hijau lebih gelap saat hover */
+    transform: scale(1.05);
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    table {
+        border-spacing: 0 8px; /* Kurangi jarak di layar kecil */
+    }
+
+    .beranda {
+        padding: 8px 16px;
+    }
+}

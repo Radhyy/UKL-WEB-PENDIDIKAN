@@ -1,0 +1,133 @@
+/* ======= Global Styles ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a1e27; /* Tema gelap */
+    color: #fff; /* Teks putih untuk kontras */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* ======= Container ======= */
+.container {
+    background: #112d38; /* Latar belakang container lebih gelap */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* ======= Form Styles ======= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #ccc; /* Teks label lebih terang */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #444; /* Border lebih gelap */
+    border-radius: 8px;
+    font-size: 14px;
+    background: #2c3e50; /* Latar belakang input lebih gelap */
+    color: #fff; /* Teks input putih */
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4caf50; /* Border hijau saat fokus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Efek fokus hijau */
+}
+
+button {
+    background: #4caf50; /* Hijau cerah untuk tombol */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #388e3c; /* Hijau lebih gelap saat hover */
+    transform: scale(1.05);
+}
+
+.btn-container {
+    text-align: center; /* Pusatkan tombol */
+    margin-top: 10px; /* Beri jarak dari tombol Update */
+}
+
+.btn-kembali {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4caf50; /* Warna hijau agar terlihat seperti link */
+    text-decoration: none; /* Hilangkan garis bawah */
+    margin-top: 5px;
+}
+
+.btn-kembali:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+    color: #388e3c; /* Warna lebih gelap saat dihover */
+}
+
+/* ======= Table Styles ======= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #444; /* Border lebih gelap */
+    text-align: left;
+}
+
+th {
+    background: #4caf50; /* Header tabel hijau cerah */
+    color: white;
+}
+
+tr:hover {
+    background: rgba(76, 175, 80, 0.1); /* Efek hover baris tabel hijau */
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
